@@ -2,7 +2,6 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:hiro_anymetion/constants/text_font_style.dart';
 import 'package:hiro_anymetion/gen/assets.gen.dart';
 import 'package:hiro_anymetion/gen/colors.gen.dart';
 import 'package:hiro_anymetion/helpers/ui_helpers.dart';
@@ -44,7 +43,7 @@ class HeroAnimationScreen extends StatelessWidget {
                 crossAxisCount: 2,
                 crossAxisSpacing: 8.w,
                 mainAxisSpacing: 8.h,
-                childAspectRatio: 0.8, // Adjust height for text below image
+                childAspectRatio: 0.8,
               ),
               itemBuilder: (context, index) {
                 return GestureDetector(
@@ -91,8 +90,9 @@ class HeroAnimationScreen extends StatelessWidget {
                               color: Colors.black,
                             ),
                           ),
-                          Text('Reebok Sneakers',style: TextStyle(color: Colors.black,fontSize: 10.sp),
-                          ),
+                          UIHelper.verticalSpace(5.h),
+                          Text('Reebok Sneakers',style: TextStyle(color: Colors.black,fontSize: 10.sp)),
+                          UIHelper.verticalSpace(5.h),
                           Row(
                             children: [
                               RatingBar.builder(
@@ -112,21 +112,15 @@ class HeroAnimationScreen extends StatelessWidget {
                                         color: AppColors
                                             .c0C1514),
                                 onRatingUpdate: (rating) {
-                                  if (kDebugMode)
+                                  if (kDebugMode) {
                                     print(rating);
+                                  }
                                 },
                               ),
-                              UIHelper.horizontalSpace(7.w),
-                              Text("720",
-                                  style: TextFontStyle
-                                      .c2D0C57poppins
-                                      .copyWith(
-                                      color: const Color(
-                                          0xffcb7b9d7),
-                                      fontSize: 14.sp)),
                             ],
                           ),
-                          Text('\$ 39.99'),
+                          UIHelper.verticalSpace(5.h),
+                          const Text('\$ 39.99'),
 
                         ],
                       )

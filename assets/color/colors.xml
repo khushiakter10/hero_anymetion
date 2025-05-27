@@ -85,6 +85,7 @@
   <color name="c171716 ">#171716</color>
   <color name="cF1F1F1 ">#F1F1F1</color>
   <color name="cFD9401 ">#FD9401</color>
+
   <color name="c494B48 ">#494B48</color>
   <color name="cFBD301 ">#FBD301</color>
   <color name="cF3F9F4 ">#F3F9F4</color>
@@ -101,6 +102,8 @@
   <color name="cF9F9F9 ">#F9F9F9</color>
   <color name="c3D292E ">#3D292E</color>
   <color name="cF2EFD4 ">#F2EFD4</color>
+
+  <color name="cE1E6EF ">#E1E6EF</color>
 
 
 </colors>

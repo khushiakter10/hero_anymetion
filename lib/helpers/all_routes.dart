@@ -10,10 +10,7 @@ import '../features/app_aducation/presentation/education_screeen.dart';
 import '../features/app_aducation/presentation/listview_screen.dart';
 import '../features/app_aducation/presentation/Clip_screen.dart';
 import '../features/app_aducation/presentation/important_rating_screen.dart';
-import '../features/payment/presentation/payment_screen.dart';
-import '../features/app_aducation/presentation/spain_screen.dart';
 import '../features/app_aducation/presentation/splash_screen.dart';
-import '../features/app_aducation/presentation/vegetables.dart';
 import '../welcome_screen.dart';
 
 
@@ -100,10 +97,6 @@ final class RouteGenerator {
         //     ? _FadedTransitionRoute(widget: const CheckoutScreen(), settings: settings)
         //     : CupertinoPageRoute(builder: (context) => const CheckoutScreen());
 
-   case Routes.Payment:
-        return Platform.isAndroid
-            ? _FadedTransitionRoute(widget: const Payment(), settings: settings)
-            : CupertinoPageRoute(builder: (context) => const Payment());
 
 case Routes.indexScreen:
         return Platform.isAndroid
