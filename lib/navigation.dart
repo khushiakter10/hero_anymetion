@@ -1,12 +1,8 @@
-// ignore_for_file: use_super_parameters, library_private_types_in_public_api, deprecated_member_use
+
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
-import 'features/app_aducation/presentation/stack_and_container.dart';
-import 'features/app_aducation/presentation/categori_screen.dart';
-import 'features/app_aducation/presentation/categories_screen.dart';
-import 'features/app_aducation/presentation/data_copriva_screen.dart';
-
+import 'package:hiro_anymetion/features/packg/presentation/hero_animation_screen.dart';
 import 'gen/assets.gen.dart';
 import 'gen/colors.gen.dart';
 import 'helpers/helper_methods.dart';
@@ -35,9 +31,8 @@ class _NavigationScreenState extends State<NavigationScreen> {
   // bool _isFirstBuild = true;
 
   final List<Widget> _screens = [
-    const CategoriScreen(),
-    const  DataCoprivaScreen(),
-     const CategoriesScreen(),
+     HeroAnimationScreen(),
+      HeroAnimationScreen(),
 
   ];
   @override

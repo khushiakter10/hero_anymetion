@@ -128,7 +128,6 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                     borderColor: Colors.transparent,
                       name: "Continue",
                       onCallBack: () {
-                      NavigationService.navigateTo(Routes.signInScreen);
                       },
                       height: 44.h,
                       minWidth: 182.w,

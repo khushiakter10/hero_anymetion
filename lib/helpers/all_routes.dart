@@ -1,16 +1,5 @@
 import 'dart:io';
 import 'package:flutter/cupertino.dart';
-
-import '../features/app_aducation/presentation/stack_and_container.dart';
-import '../features/app_aducation/presentation/categori_screen.dart';
-import '../features/app_aducation/presentation/categories_screen.dart';
-import '../features/app_aducation/presentation/data_copriva_screen.dart';
-import '../features/app_aducation/presentation/edit_profile_copy.dart';
-import '../features/app_aducation/presentation/education_screeen.dart';
-import '../features/app_aducation/presentation/listview_screen.dart';
-import '../features/app_aducation/presentation/Clip_screen.dart';
-import '../features/app_aducation/presentation/important_rating_screen.dart';
-import '../features/app_aducation/presentation/splash_screen.dart';
 import '../welcome_screen.dart';
 
 
@@ -23,19 +12,7 @@ final class Routes {
   static const String categoriesScreen = '/categoriesScreen';
   static const String vegetables = '/vegetables';
   static const String spainScreen = '/spainScreen';
-  static const String checkoutScreen = '/checkoutScreen';
-  static const String Payment = '/Payment';
-  static const String categoriScreen = '/categoriScreen';
-  static const String lesson_Screen = '/lesson_Screen';
-  static const String dataCoprivaScreen = '/dataCoprivaScreen';
-  static const String backScreen = '/backScreen';
-  static const String welcomeScreen = '/welcomeScreen';
-  static const String signInScreen = '/signInScreen';
-  static const String indexScreen = '/indexScreen';
-  static const String educationScreeen = '/educationScreeen';
-  static const String  prograseScreen = '/ prograseScreen';
-  static const String  editProfileCopy = '/ editProfileCopy';
-  static const String  ratingScreen = '/ ratingScreen';
+
 
 
 
@@ -48,79 +25,14 @@ final class RouteGenerator {
   static Route<dynamic>? generateRoute(RouteSettings settings) {
 
     switch (settings.name) {
+//
+//
+// case Routes.indexScreen:
+//         return Platform.isAndroid
+//             ? _FadedTransitionRoute(widget: const IndexScreen(), settings: settings)
+//             : CupertinoPageRoute(builder: (context) => const IndexScreen());
+//
 
-      case Routes.categoriScreen:
-        return Platform.isAndroid
-            ? _FadedTransitionRoute(widget: const CategoriScreen(), settings: settings)
-            : CupertinoPageRoute(builder: (context) => const CategoriScreen());
-
-
- case Routes.dataCoprivaScreen:
-        return Platform.isAndroid
-            ? _FadedTransitionRoute(widget: const DataCoprivaScreen(), settings: settings)
-            : CupertinoPageRoute(builder: (context) => const DataCoprivaScreen());
-
- case Routes.backScreen:
-        return Platform.isAndroid
-            ? _FadedTransitionRoute(widget: const BackScreen(), settings: settings)
-            : CupertinoPageRoute(builder: (context) => const BackScreen());
-
- case Routes.welcomeScreen:
-        return Platform.isAndroid
-            ? _FadedTransitionRoute(widget: const WelcomeScreen(), settings: settings)
-            : CupertinoPageRoute(builder: (context) => const WelcomeScreen());
-
-
-
-      case Routes.splashScreen:
-        return Platform.isAndroid
-            ? _FadedTransitionRoute(widget: const SplashScreen(), settings: settings)
-            : CupertinoPageRoute(builder: (context) => const SplashScreen());
-
-          case Routes.categoriesScreen:
-        return Platform.isAndroid
-            ? _FadedTransitionRoute(widget: const CategoriesScreen(), settings: settings)
-            : CupertinoPageRoute(builder: (context) => const CategoriesScreen());
-
-        //   case Routes.vegetables:
-        // return Platform.isAndroid
-        //     ? _FadedTransitionRoute(widget: const Vegetables(), settings: settings)
-        //     : CupertinoPageRoute(builder: (context) => const Vegetables());
-        //
-        //    case Routes.spainScreen:
-        // return Platform.isAndroid
-        //     ? _FadedTransitionRoute(widget: const SpainScreen(), settings: settings)
-        //     : CupertinoPageRoute(builder: (context) => const SpainScreen());
-        //
-        //   case Routes.checkoutScreen:
-        // return Platform.isAndroid
-        //     ? _FadedTransitionRoute(widget: const CheckoutScreen(), settings: settings)
-        //     : CupertinoPageRoute(builder: (context) => const CheckoutScreen());
-
-
-case Routes.indexScreen:
-        return Platform.isAndroid
-            ? _FadedTransitionRoute(widget: const IndexScreen(), settings: settings)
-            : CupertinoPageRoute(builder: (context) => const IndexScreen());
-case Routes.educationScreeen:
-        return Platform.isAndroid
-            ? _FadedTransitionRoute(widget: const EducationScreeen(), settings: settings)
-            : CupertinoPageRoute(builder: (context) => const EducationScreeen());
-
-case Routes. prograseScreen:
-        return Platform.isAndroid
-            ? _FadedTransitionRoute(widget: const  PrograseScreen(), settings: settings)
-            : CupertinoPageRoute(builder: (context) => const  PrograseScreen());
-
-case Routes. editProfileCopy:
-        return Platform.isAndroid
-            ? _FadedTransitionRoute(widget: const  EditProfileCopy(), settings: settings)
-            : CupertinoPageRoute(builder: (context) => const  EditProfileCopy());
-
-case Routes. ratingScreen:
-        return Platform.isAndroid
-            ? _FadedTransitionRoute(widget: const  RatingScreen(), settings: settings)
-            : CupertinoPageRoute(builder: (context) => const  RatingScreen());
 
 
       default:

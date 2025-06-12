@@ -96,7 +96,7 @@ class UtillScreenMobile extends StatelessWidget {
             //  home: const WelcomeScreen(),
             // home:   const OnbordingScreen(),
 
-            home:   HeroAnimationScreen(),
+            home:    HeroAnimationScreen (),
           ),
         );
       },
